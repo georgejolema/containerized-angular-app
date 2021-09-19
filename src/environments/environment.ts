@@ -2,8 +2,18 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { HTTP_INTERCEPTORS } from "@angular/common/http";
+import { BackendInterceptor } from "src/mocks/backend.interceptor";
+
 export const environment = {
-  production: false
+  production: false,
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: BackendInterceptor,
+      multi: true,
+    },  
+  ]
 };
 
 /*
