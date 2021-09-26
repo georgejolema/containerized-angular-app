@@ -8,6 +8,8 @@ This project shows many features such as:
 * Proxy configuration
 * docker builds
 
+[Presentation] (https://docs.google.com/presentation/d/1AC4ID2w0GnS0fpIQg00tyim4gbA1u0Ei_OX3P2hqPsM/edit?usp=sharing)
+
 ## Running localy
 
 1. Run `npm install` at the root of this project
