@@ -10,6 +10,3 @@ RUN npm run build
 FROM nginx:alpine
 COPY --from=node /app/dist/my-containerized-app /usr/share/nginx/html
 COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
-
-# docker build -t nginx-angular .
-# docker run -p 8080:80 -v $(pwd)/dist/my-containerized-app:/usr/share/nginx/html nginx-angular

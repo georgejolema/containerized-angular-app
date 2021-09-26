@@ -19,5 +19,3 @@ networks:
   app-network:
     driver: bridge
 
-# run docker-compose -f docker-compose.prod.yml build
-# run docker-compose -f docker-compose.prod.yml up
