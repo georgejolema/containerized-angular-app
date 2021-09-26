@@ -1,5 +1,5 @@
 FROM nginx:alpine
-COPY ./config/nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./config/nginx.dev.conf /etc/nginx/conf.d/default.conf
 
 # build with `ng build --configuration=development`
 # docker build -t nginx-angular .
