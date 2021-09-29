@@ -22,8 +22,7 @@
     ],
     "paths": {
       "transactions": [
-        "dist/transactions/transactions",
-        "dist/transactions"
+        "projects/transactions/src/public-api.ts"
       ]
     }
   },
